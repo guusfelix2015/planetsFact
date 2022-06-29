@@ -1,0 +1,8 @@
+.marginTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 20px;
+  gap: 20px;
+  }

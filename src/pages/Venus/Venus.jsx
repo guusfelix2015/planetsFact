@@ -1,5 +1,5 @@
 const Venus = () => {
-  return <div>Venus</div>;
+  return <div>Teste</div>;
 };
 
 export default Venus;

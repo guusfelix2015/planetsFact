@@ -1,23 +1,21 @@
-import { useFetch } from "./hooks/useFetch";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
+import Mercury from "./pages/Mercury/Mercury";
+import Venus from "./pages/Venus/Venus";
+import Earth from "./pages/Earth/Earth";
 
 function App() {
-  const url = "http://localhost:3000/planets";
-  const { data: planets } = useFetch(url);
-
   return (
     <div>
-      <Header />
-      {/* <ul>
-        {planets &&
-          planets.map((planet, index) => (
-            <li key={index}>
-              {planet.name}
-              <h2>{planet.structure.content}</h2>
-            </li>
-          ))}
-      </ul> */}
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Mercury />} />
+          <Route path="/mercury" element={<Mercury />} />
+          <Route path="/venus" element={<Venus />} />
+          <Route path="/earth" element={<Earth />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,5 +1,9 @@
 const CardPlanet = () => {
-  return <div>Card</div>;
+  return (
+    <div>
+      <h1>Card</h1>
+    </div>
+  );
 };
 
 export default CardPlanet;
