@@ -18,4 +18,5 @@ const GetPlanetId = () => {
     </>
   );
 };
+
 export default GetPlanetId;
