@@ -8,8 +8,9 @@ const Header = () => {
 
   return (
     <header>
-      <nav>
-        <ul className={styles.marginTop}>
+      <nav className={styles.navigate}>
+        <h1>The Planets</h1>
+        <ul className={styles.links}>
           {planets &&
             planets.map((planet) => (
               <li key={planet.id}>
