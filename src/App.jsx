@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import Mercury from "./pages/Mercury/Mercury";
 import Venus from "./pages/Venus/Venus";
 import Earth from "./pages/Earth/Earth";
+import Planet from "./pages/Planet/Planet";
 
 function App() {
   return (
@@ -11,9 +12,11 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Navigate to="/mercury" />} />
-          <Route path="/mercury" element={<Mercury />} />
+          <Route path="planets/:name" element={<Planet />} />
+
+          {/*           <Route path="/mercury" element={<Mercury />} />
           <Route path="/venus" element={<Venus />} />
-          <Route path="/earth" element={<Earth />} />
+          <Route path="/earth" element={<Earth />} /> */}
         </Routes>
       </BrowserRouter>
     </div>
