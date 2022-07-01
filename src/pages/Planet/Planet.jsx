@@ -10,7 +10,6 @@ const Planet = () => {
 
   useEffect(() => {
     if (data && data.length > 0) setPlanets(data[0]);
-    console.log(data[0]);
   }, [data]);
 
   return (

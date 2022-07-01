@@ -1,8 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/Header/Header";
-import Mercury from "./pages/Mercury/Mercury";
-import Venus from "./pages/Venus/Venus";
-import Earth from "./pages/Earth/Earth";
 import Planet from "./pages/Planet/Planet";
 
 function App() {
@@ -11,12 +8,8 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Navigate to="/mercury" />} />
+          <Route path="/" element={<Navigate to="/planets/mercury" />} />
           <Route path="planets/:name" element={<Planet />} />
-
-          {/*           <Route path="/mercury" element={<Mercury />} />
-          <Route path="/venus" element={<Venus />} />
-          <Route path="/earth" element={<Earth />} /> */}
         </Routes>
       </BrowserRouter>
     </div>
