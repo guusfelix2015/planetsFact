@@ -32,6 +32,37 @@ const Planet = () => {
                 </a>
                 <img src="../assets/icon-source.svg" alt="" />
               </div>
+              <div className={styles.infoPlanets}>
+                <ul>
+                  <li>
+                    <span>01</span>Overviewr
+                  </li>
+                  <li>
+                    <span>02</span>Internal Structure
+                  </li>
+                  <li>
+                    <span>03</span>Surface Geology
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className={styles.cardsInfo}>
+            <div className={styles.card}>
+              <p>ROTATION TIME</p>
+              <p>{planets.rotation}</p>
+            </div>
+            <div className={styles.card}>
+              <p>ROTATION TIME</p>
+              <p>{planets.rotation}</p>
+            </div>
+            <div className={styles.card}>
+              <p>ROTATION TIME</p>
+              <p>{planets.rotation}</p>
+            </div>
+            <div className={styles.card}>
+              <p>ROTATION TIME</p>
+              <p>{planets.rotation}</p>
             </div>
           </div>
         </div>
