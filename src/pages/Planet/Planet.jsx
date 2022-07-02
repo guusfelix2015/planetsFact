@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { useFetch } from "../../hooks/useFetch";
+import styles from "./Planet.module.css";
 
 const Planet = () => {
   const { name } = useParams();
@@ -15,8 +17,23 @@ const Planet = () => {
   return (
     <>
       {planets && (
-        <div>
-          <h1>{planets.name}</h1>
+        <div className={styles.container}>
+          <div className={styles.planetContainer}>
+            <div className={styles.planetImg}>
+              <img src={planets.images.planet} alt="" />
+            </div>
+            <div className={styles.planetContent}>
+              <h1>{planets.name}</h1>
+              <p>{planets.overview.content}</p>
+              <div className={styles.spanFlex}>
+                <span>Source:</span>
+                <a target="_blank" href={planets.overview.source}>
+                  Wikepedia
+                </a>
+                <img src="../assets/icon-source.svg" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       )}
     </>
