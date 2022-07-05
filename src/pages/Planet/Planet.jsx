@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+
 import { useFetch } from "../../hooks/useFetch";
 import styles from "./Planet.module.css";
 
@@ -10,7 +11,7 @@ const Planet = () => {
   const [planets, setPlanets] = useState();
   const [text, setText] = useState();
   const [img, setImg] = useState();
-  const [color, setColor] = useState("transparent");
+  const [selectedIndex, setSelectedIndex] = useState(1);
 
   useEffect(() => {
     if (!data) return;
@@ -24,6 +25,10 @@ const Planet = () => {
     setText(planets.overview.content);
     setImg(planets.images.planet);
   }, [planets]);
+
+  useEffect(() => {
+    setSelectedIndex(1);
+  }, [name]);
 
   return (
     <>
@@ -46,7 +51,12 @@ const Planet = () => {
               <div className={styles.infoPlanets}>
                 <ul>
                   <li
+                    style={{
+                      background:
+                        selectedIndex === 1 ? planets.color : "transparent",
+                    }}
                     onClick={() => {
+                      setSelectedIndex(1);
                       setText(planets.overview.content);
                       setImg(planets.images.planet);
                     }}
@@ -54,8 +64,12 @@ const Planet = () => {
                     <span>01</span>Overview
                   </li>
                   <li
-                    onFocus={() => setColor(true)}
+                    style={{
+                      background:
+                        selectedIndex === 2 ? planets.color : "transparent",
+                    }}
                     onClick={() => {
+                      setSelectedIndex(2);
                       setText(planets.structure.content);
                       setImg(planets.images.internal);
                     }}
@@ -63,7 +77,12 @@ const Planet = () => {
                     <span>02</span>Internal Structure
                   </li>
                   <li
+                    style={{
+                      background:
+                        selectedIndex === 3 ? planets.color : "transparent",
+                    }}
                     onClick={() => {
+                      setSelectedIndex(3);
                       setText(planets.geology.content);
                       setImg(planets.images.geology);
                     }}

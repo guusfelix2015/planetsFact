@@ -5,11 +5,14 @@
 }
 
 .planetContainer {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+.planetImg {
+  max-width: 40rem;
 }
 
 .planetContent h1 {
@@ -24,6 +27,7 @@
   line-height: 2.5rem;
   text-align: justify;
   margin-bottom: 2.4rem;
+  max-width: 35rem;
 }
 
 .spanFlex span {
@@ -67,7 +71,7 @@
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
-  padding: 1.2rem 10rem 1.2rem 7.4rem;
+  padding: 1.2rem;
   border: 1px solid #f2f2f2;
   margin-bottom: 1.6rem;
   cursor: pointer;
