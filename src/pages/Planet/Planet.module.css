@@ -6,15 +6,6 @@
   padding: 3rem;
 }
 
-.planetImg {
-  margin-top: 2rem;
-}
-
-.planetImg img {
-  width: 400px;
-  height: 400px;
-}
-
 .planetContainer {
   margin-top: 2rem;
   display: grid;
@@ -94,27 +85,28 @@
 
 .cardsInfo {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   gap: 3.6rem;
   margin-top: 14rem;
 }
 
 .card {
+  flex: 1;
   border: 1px solid #38384f;
-  padding: 3rem 10rem 3rem 2rem;
+  padding: 3rem 2rem;
   border-radius: 0.2rem;
   cursor: pointer;
 }
 
-.card p {
+.card p:nth-child(1) {
   font-size: 1.6rem;
   color: #fff;
+  opacity: 0.5;
 }
 
 .card p:last-child {
   font-size: 3rem;
   margin-top: 1rem;
   line-height: 3.2rem;
-  width: 15rem;
+  color: #fff;
 }
