@@ -10,6 +10,7 @@ const Planet = () => {
   const [planets, setPlanets] = useState();
   const [text, setText] = useState();
   const [img, setImg] = useState();
+  const [color, setColor] = useState("transparent");
 
   useEffect(() => {
     if (!data) return;
@@ -53,6 +54,7 @@ const Planet = () => {
                     <span>01</span>Overview
                   </li>
                   <li
+                    onFocus={() => setColor(true)}
                     onClick={() => {
                       setText(planets.structure.content);
                       setImg(planets.images.internal);
