@@ -9,7 +9,9 @@ const Header = () => {
   return (
     <header>
       <nav className={styles.navigate}>
-        <h1>The Planets</h1>
+        <Link className={styles.logo} to="/">
+          The Planets
+        </Link>
         <ul className={styles.links}>
           {planets &&
             planets.map((planet) => (

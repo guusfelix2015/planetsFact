@@ -1,8 +1,6 @@
 .container {
   max-width: 128rem;
   margin: 0 auto;
-  width: 100vw;
-  height: 100vh;
   padding: 3rem;
 }
 
@@ -75,6 +73,10 @@
   cursor: pointer;
 }
 
+.infoPlanets ul li:last-child {
+  margin-bottom: 0;
+}
+
 .infoPlanets ul li span {
   margin-right: 2.8rem;
 }
@@ -87,7 +89,7 @@
   display: flex;
   justify-content: space-between;
   gap: 3.6rem;
-  margin-top: 14rem;
+  margin-top: 8.5rem;
 }
 
 .card {
