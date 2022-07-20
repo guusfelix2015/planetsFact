@@ -37,3 +37,53 @@ header {
 .links li a:hover {
   opacity: 1;
 }
+
+.navToggle div {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: darkgray;
+  transition: 0.3s;
+}
+
+.navToggle {
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .navToggle {
+    display: block;
+    z-index: 999;
+  }
+  .links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #070724;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    z-index: 1;
+  }
+}
+
+.navActive {
+  transform: translateX(0);
+  transition: 0.2s;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-3px, -5px);
+}

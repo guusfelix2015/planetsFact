@@ -116,3 +116,16 @@
   line-height: 3.2rem;
   color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .planetContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cardsInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

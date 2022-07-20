@@ -28,3 +28,9 @@ body {
   background-color: #070724;
   background-image: url("../assets/background-stars.svg");
 }
+
+@media screen and (max-width: 768px) {
+  * {
+    overflow: visible;
+  }
+}
