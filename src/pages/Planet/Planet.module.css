@@ -129,3 +129,14 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+@media screen and (height: 768px) {
+  .cardsInfo {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .container {
+    padding-top: 0;
+  }
+}
