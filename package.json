@@ -7,7 +7,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "server": "json-server --watch data/db.json",
-    "server:prod": "json-server --port 3000 --host projectsfacts.herokuapp.com data/db.json"
+    "server:prod": "node server.js"
   },
   "dependencies": {
     "json-server": "^0.17.0",
