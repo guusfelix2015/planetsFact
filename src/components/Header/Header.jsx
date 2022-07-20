@@ -31,7 +31,7 @@ const Header = () => {
             planets.map((planet) => (
               <li key={planet.id}>
                 <Link
-                  onClick={() => setNavActive(styles.links)}
+                  onClick={() => setToggleIcon(styles.styles.navToggle)}
                   to={`/planets/${planet.name}`}
                 >
                   {planet.name}
