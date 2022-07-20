@@ -1,2 +1,1 @@
-web: npm run dev
-api: npm run server:prod
+web: npm run server:prod
