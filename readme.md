@@ -2,8 +2,7 @@
 <h1 ali>Planets Facts 🪐</h1>
 </div>
 <div align='center'>
-  <a href="https://gyazo.com/76c5eabaa33709c0db0874b04220b95e"><img src="https://i.gyazo.com/76c5eabaa33709c0db0874b04220b95e.gif" alt="Image from Gyazo" width="1280"/></a>
-  <a href="https://gyazo.com/36e33c1259ef7e6854a66574664d90a5"><img src="https://i.gyazo.com/36e33c1259ef7e6854a66574664d90a5.gif" alt="Image from Gyazo" width="542"/></a>
+<a href="https://gyazo.com/4aaecbcc4ef19e8370a7bd1bb00de565"><img src="https://i.gyazo.com/4aaecbcc4ef19e8370a7bd1bb00de565.png" alt="Image from Gyazo" width="1920"/></a>
 </div>
 
 <h2>🔖 Descrição</h2>
