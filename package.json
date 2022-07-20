@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "server": "json-server --watch data/db.json"
+    "server": "json-server --watch data/db.json",
+    "server:prod": "json-server --watch data/db.json --port 80"
   },
   "dependencies": {
     "json-server": "^0.17.0",
