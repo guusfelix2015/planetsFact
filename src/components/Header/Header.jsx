@@ -4,7 +4,7 @@ import { useState } from "react";
 import styles from "./Header.module.css";
 
 const Header = () => {
-  const url = "http://localhost:3000/planets";
+  const url = "https://projectsfacts.herokuapp.com/planets";
   const { data: planets } = useFetch(url);
 
   const [navActive, setNavActive] = useState(styles.links);

@@ -6,7 +6,7 @@ import styles from "./Planet.module.css";
 
 const Planet = () => {
   const { name } = useParams();
-  const url = "http://localhost:3000/planets?name=" + name;
+  const url = "https://projectsfacts.herokuapp.com/planets?name=" + name;
   const { data } = useFetch(url);
   const [planets, setPlanets] = useState();
   const [text, setText] = useState();
