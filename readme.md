@@ -7,7 +7,7 @@
 
 <h2>🔖 Descrição</h2>
 
-<p>Planets Facts é uma Landing Page responsiva que mostra fatos sobre os planetas utlizando react e json-server para servir os dados do backend para o frontend</p>
+<p>Planets Facts é uma Landing Page responsiva que mostra fatos sobre os planetas utlizando react e json-server para servir os dados do backend para o frontend.</p>
 
 <h2>🚀 Tecnologias</h2>
 
